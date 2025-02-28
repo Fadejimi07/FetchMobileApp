@@ -12,7 +12,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 
 @Composable
-fun HeaderItem(listId: String) {
+fun ItemHeader(listId: String) {
     Box(
         modifier = Modifier
             .fillMaxWidth()

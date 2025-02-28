@@ -63,7 +63,7 @@ dependencies {
     // retrofit dependency
     implementation(libs.retrofit)
     implementation(libs.gson)
-    implementation(libs.converter.gson)
+    implementation(libs.retrofit2.converter.gson)
 
     // room dependency
     implementation(libs.androidx.room.runtime)

@@ -1,4 +1,4 @@
-package com.example.fetchmobileapp.model
+package com.example.fetchmobileapp.di
 
 import com.example.fetchmobileapp.repository.FetchItemsRepository
 import com.example.fetchmobileapp.repository.FetchItemsRepositoryImpl

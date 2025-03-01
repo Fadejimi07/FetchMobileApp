@@ -8,6 +8,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.fetchmobileapp.model.Item
 import com.example.fetchmobileapp.repository.FetchItemsRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -18,7 +19,7 @@ class FetchItemsViewModel @Inject constructor(private val repo: FetchItemsReposi
         private set
 
     init {
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
             val itemsCountInDB = repo.getItemsCountInDB()
             if (itemsCountInDB > 0) {
                 fetchItemsFromDB()
@@ -31,7 +32,7 @@ class FetchItemsViewModel @Inject constructor(private val repo: FetchItemsReposi
     }
 
     private fun fetchItemsFromDB() {
-        viewModelScope.launch {
+        viewModelScope.launch(Dispatchers.IO) {
             val itemsListIds = repo.getListIdsFromDB()
             val itemMap: MutableMap<Int, List<Item>> = mutableMapOf()
             for (listId in itemsListIds) {

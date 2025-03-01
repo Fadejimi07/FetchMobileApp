@@ -11,7 +11,7 @@ class FetchItemsRepositoryImpl @Inject constructor(
 ) :
     FetchItemsRepository {
     override suspend fun fetchItemsFromOnlineApi(): List<Item> {
-        return apiService.getList()
+        return apiService.getItems()
     }
 
     override suspend fun insertItemsIntoDB(items: List<Item>) {

@@ -5,6 +5,7 @@ plugins {
     id("com.google.devtools.ksp")
     id("kotlin-kapt")
     id("com.google.dagger.hilt.android")
+    id("kotlinx-serialization")
 }
 
 android {
@@ -63,7 +64,13 @@ dependencies {
     // retrofit dependency
     implementation(libs.retrofit)
     implementation(libs.gson)
-    implementation(libs.retrofit2.converter.gson)
+    // Retrofit with Scalar Converter
+    implementation(libs.converter.scalars)
+
+    // Retrofit with Kotlin serialization Converter
+
+    implementation(libs.retrofit2.kotlinx.serialization.converter)
+    implementation(libs.okhttp)
 
     // room dependency
     implementation(libs.androidx.room.runtime)
@@ -89,6 +96,12 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.compose)
     // LiveData
     implementation(libs.androidx.lifecycle.livedata.ktx)
+
+    // Kotlin serialization
+    implementation(libs.kotlinx.serialization.json)
+
+    // Logging interceptor
+    implementation(libs.logging.interceptor)
 }
 
 // Allow references to generated code

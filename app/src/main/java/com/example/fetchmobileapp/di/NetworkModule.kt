@@ -1,6 +1,6 @@
 package com.example.fetchmobileapp.di
 
-import com.example.fetchmobileapp.network.ApiService
+import com.example.fetchmobileapp.data.network.ApiService
 import com.jakewharton.retrofit2.converter.kotlinx.serialization.asConverterFactory
 import dagger.Module
 import dagger.Provides

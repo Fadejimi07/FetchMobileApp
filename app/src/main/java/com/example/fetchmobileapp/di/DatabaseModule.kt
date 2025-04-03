@@ -2,8 +2,8 @@ package com.example.fetchmobileapp.di
 
 import android.content.Context
 import androidx.room.Room
-import com.example.fetchmobileapp.room.ItemDB
-import com.example.fetchmobileapp.room.ItemDao
+import com.example.fetchmobileapp.data.local.room.ItemDB
+import com.example.fetchmobileapp.data.local.room.ItemDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

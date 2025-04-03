@@ -14,7 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.fetchmobileapp.screens.Items
+import com.example.fetchmobileapp.ui.screens.Items
 import com.example.fetchmobileapp.ui.theme.FetchMobileAppTheme
 import dagger.hilt.android.AndroidEntryPoint
 

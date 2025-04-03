@@ -1,4 +1,4 @@
-package com.example.fetchmobileapp.model
+package com.example.fetchmobileapp.ui.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

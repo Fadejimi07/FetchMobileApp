@@ -1,4 +1,4 @@
-package com.example.fetchmobileapp.screens
+package com.example.fetchmobileapp.ui.screens
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -11,7 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
-import com.example.fetchmobileapp.model.Item
+import com.example.fetchmobileapp.ui.model.Item
 
 @Composable
 fun ListItem(item: Item) {

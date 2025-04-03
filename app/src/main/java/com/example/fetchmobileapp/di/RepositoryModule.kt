@@ -1,7 +1,7 @@
 package com.example.fetchmobileapp.di
 
-import com.example.fetchmobileapp.repository.FetchItemsRepository
-import com.example.fetchmobileapp.repository.FetchItemsRepositoryImpl
+import com.example.fetchmobileapp.data.repository.FetchItemsRepository
+import com.example.fetchmobileapp.data.repository.FetchItemsRepositoryImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

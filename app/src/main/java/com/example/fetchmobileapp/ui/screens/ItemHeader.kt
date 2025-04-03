@@ -1,4 +1,4 @@
-package com.example.fetchmobileapp.screens
+package com.example.fetchmobileapp.ui.screens
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
